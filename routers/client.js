@@ -1,8 +1,7 @@
 const express = require('express');
-const {db} = require("../utils/clientsDb");
+const { db } = require("../utils/clientsDb");
 const clientRouter = express.Router();
-const {ClientRecord} = require('../record/client-record')
-const {NotFoundError} = require("../utils/errors");
+const { NotFoundError } = require("../utils/errors");
 
 clientRouter
 	.get('/', (req, res) => {
